@@ -105,7 +105,7 @@ export default class MeshBeam {
 
 		
 		var shaderMaterial = new THREE.ShaderMaterial({
-			wireframe: true,
+			wireframe: false,
 			side: THREE.DoubleSide,
 			uniforms: this.uniforms,
 			vertexShader: vs,
