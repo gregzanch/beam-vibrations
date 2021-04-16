@@ -61,7 +61,8 @@ export default class Renderer {
     const far = 1000;
     const near = 0.0001;
     this.camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    
+    this.camera.position.set(1,1,1);
+    this.camera.lookAt(0,0,0);
     this.renderer = new THREE.WebGLRenderer({
       canvas: this.elt,
       antialias: true
